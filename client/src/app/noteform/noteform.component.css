@@ -1,0 +1,25 @@
+body {
+    border: 1px solid black;
+    padding: 20px;
+    background: white;
+}
+
+#textbox {
+    width: 70%;
+}
+
+#submit {
+    display: inline-block;
+}
+
+p {
+    font-size: .8em;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.shown {
+    visibility: visible;
+}

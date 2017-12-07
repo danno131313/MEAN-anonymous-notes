@@ -1,0 +1,7 @@
+<body>
+    <form (submit)="addNote()">
+        Note: <input type="text" id="textbox" required minlength="3" name="note" [(ngModel)]="note.content" #thisnote="ngModel" />
+        <input type="submit" id="submit" value="Add Note" [disabled]="thisnote.errors"/>
+    </form>
+    <p [ngClass]="{ 'hidden': !thisnote.errors || thisnote.pristine, 'shown': thisnote.errors && thisnote.dirty }">* Must be at least 3 characters</p>
+</body>
